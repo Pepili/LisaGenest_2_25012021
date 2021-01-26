@@ -1,0 +1,24 @@
+/* élement principaux de la page */
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('Raleway/raleway-v18-latin-regular.ttf');
+    src: url('Raleway/raleway-v18-latin-regular.svg'),
+         url('Raleway/raleway-v18-latin-regular.eot'),
+         url('Raleway/raleway-v18-latin-regular.woff'),
+         url('Raleway/raleway-v18-latin-regular.woff2');
+    font-weight: normal;
+    font-style:normal;
+}
+
+body
+{
+    background-color: #F2F2F2;
+    font-family: 'Raleway', 'Times New Roman', Times, serif;
+    font-size: medium;
+    margin:40px;
+    flex-wrap:wrap;
+  
+}
+
+/* En-tête */
