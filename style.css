@@ -24,40 +24,38 @@ body
 
 
 /* En-tête */
-
-#liens
+header
+{
+    
+}
+.onglet
 {
     display:flex;
     flex-wrap:wrap;
-    justify-content:flex-end;
-    
+    justify-content:flex-end;    
 }
-#liens nav a
+.onglet nav a
 {
     margin-left: 50px;
     text-decoration: none;
     color:black;    
 }
-.inscription a
+.onglet nav a:hover
+{
+    color:#0065FC;
+    border-top: 4px #0065FC solid;
+    padding-top:42px;
+} 
+#inscription a
 {
     color:#0065FC;
     font-weight:bold;
     margin-left: 50px;
     text-decoration: none;
 }
-#liens nav a:hover, #liens nav a:focus, #liens nav a:active
-{
-    color:#0065FC;
-    border-top: 4px #0065FC solid;
-    padding-top:42px;
-} 
 
-/*recherches*/
-.section1
-{
-    margin-top: 30px;
-}
 
+/*rechercher*/
 h1
 {
     font-weight:bold;
@@ -73,6 +71,7 @@ h1
     font-size:medium;
     margin-left:20px;
     font-weight:bold;
+    outline:none;
 }
 
 
@@ -86,43 +85,63 @@ h1
     font-weight:bold;
     border:1px #0065FC solid;
     border-radius:0 15px 15px 0;
+    outline:none;
 }
 
 .filtres
 {
     
-    display:flex;
-       
+    display:flex;    
+               
 }
 .filtres p
 {
-    margin-right:40px; 
+    margin-top:40px;
+    font-size:medium;
+    font-weight:bold;
+}
+.filtres ul
+{
+    display: flex;
+    width:100%;  
+
+}
+.filtres li
+{
+    display:flex;
     font-weight:bold;
     border: 2px #d9d9d9 solid;
-    padding: 15px 20px 15px 20px;
-    border-radius: 30px;
+    border-radius: 50px;
+    align-items:center;
+    padding-right:15px;
+    cursor: pointer;
+    margin-right:30px;
+    margin-top: 15px;
 }
-.filtres i
+.filtres li:first-child
 {
-    Margin-right:18px;
-    color: #0065FC;
-    border: 1px #d9d9d9 solid;
-    border-radius:100%;
-    padding:20px;
-    background-color: #d9d9d9;
+    justify-self:start;
+    
 }
-#titre
+.filtres li:last-child
 {
-    border:none;
+    justify-self:center;
 }
 
-#liens p:hover, #liens p:focus
+.filtres i
 {
-    background-color: #0065FC;
-    color: #DEEBFF;
+    Margin-right:5px;    
+    color: #0065FC;
+    border-radius:100%;
+    padding:10px;
+    background-color:#deebff;
 }
-.filtres i:hover, .filtres i:focus
+
+
+.filtres li:hover, .filtres li:focus
 {
-    color:#DEEBFF;
+    color: #0065FC;
+    background-color: #DEEBFF;
 }
+
 

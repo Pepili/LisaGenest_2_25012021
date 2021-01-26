@@ -11,61 +11,46 @@
 <body>
 
     <header>  
-        <div id="liens">
-        <nav>
-            <a href="#hebergements">Hébergements</a>
-            <a href="#activites">Activités</a>
-        </nav>
-        <div class="inscription">
-            <a href="#">S'inscrire</a>
+        <div class="onglet">
+            <nav>
+                <a href="#hebergements">Hébergements</a>
+                <a href="#activites">Activités</a>
+            </nav>
+            <div id="inscription">
+                <a href="#">S'inscrire</a>
+            </div>
         </div>
-        </div>
-        <div class="logo">
-        <img src="images/logo/Reservia.svg" alt="logo"/>            
-        </div>
-
+        <img src="images/logo/Reservia.svg" alt="logo"/>         
     </header>
 
     <section class="section1">
 
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p id="legende">En plein centre ville ou en pleine nature</p>
-        
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p id="legende">En plein centre ville ou en pleine nature</p>
+            
         <div class="recherche">
             <i class="fas fa-map-marker-alt fa-1em"></i><input type="search" placeholder="ville, région, pays..." name="localisation" class="search"/>
-           <input type="submit" value="Rechercher" class="bouton"/>
-
+            <input type="submit" value="Rechercher" class="bouton"/>
         </div>
-
-
         <div class="filtres">
-
-            <p id="titre">
+            <p>
                 Filtres                
             </p>
-            <div id="liens">
-           <p id="eco">
-                <i class="fas fa-money-bill-wave"></i>  Economique
-            </p>
-            <p id="Familial">
-                <i class="fas fa-money-bill-wave"></i>  Familial
-            </p>
-            <p id="romantique">
-                <i class="fas fa-heart"></i>  Romantique
-            </p>
-            <p id="animaux">
-                <i class="fas fa-dog"></i>  Animaux autorisés
-            </p>
-            </div>
-                
+            <ul>
+                <li><i class="fas fa-money-bill-wave"></i> Economique</li>          
+                <li><i class="fas fa-money-bill-wave"></i>  Familial</li>            
+                <li><i class="fas fa-heart"></i>  Romantique</li>            
+                <li><i class="fas fa-dog"></i>  Animaux autorisés</li>            
+            </ul>                          
         </div>
-
     </section>
 
     <section class="section2" id="hebergements">
         <h2>Hébergements à Marseille </h2>
         <figure>
-            <a href="*"><img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="img1"/></a>
+            <a href="#"> 
+                <img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="img1"/>
+            </a>
             <figcaption>Auberge la Cannebière</figcaption>
 
         </figure>
