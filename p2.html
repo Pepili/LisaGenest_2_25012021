@@ -4,34 +4,36 @@
 <head>
     <meta charset="utf-8"/>
     <title>Reservia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"/>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo/Reservia.svg" alt="logo"/>            
-        </div>
 
+    <header>  
+        <div id="liens">
         <nav>
-            <a href="#hebergement">Hébergements</a>
+            <a href="#hebergements">Hébergements</a>
             <a href="#activites">Activités</a>
         </nav>
-
         <div class="inscription">
-            <a href="**">S'inscrire</a>
+            <a href="#">S'inscrire</a>
         </div>
+        </div>
+        <div class="logo">
+        <img src="images/logo/Reservia.svg" alt="logo"/>            
+        </div>
+
     </header>
 
     <section class="section1">
 
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+        <p id="legende">En plein centre ville ou en pleine nature</p>
         
         <div class="recherche">
-
-           <img src="images/Icones/map-marker-alt-solid.svg" alt="locate"/>
-           <input type="search" placeholder="ville, région, pays..." name="localisation"/>
-           <input type="submit" value="Rechercher"/>
+            <i class="fas fa-map-marker-alt fa-1em"></i><input type="search" placeholder="ville, région, pays..." name="localisation" class="search"/>
+           <input type="submit" value="Rechercher" class="bouton"/>
 
         </div>
 
@@ -39,35 +41,29 @@
         <div class="filtres">
 
             <p>
-                Filtres
+                Filtres                
+            </p>
+            <p id="eco">
+                <i class="fas fa-money-bill-wave"></i>  Economique
+            </p>
+            <p id="Familial">
+                <i class="fas fa-money-bill-wave"></i>  Familial
+            </p>
+            <p id="romantique">
+                <i class="fas fa-heart"></i>  Romantique
+            </p>
+            <p id="animaux">
+                <i class="fas fa-dog"></i>  Animaux autorisés
             </p>
 
-            <figure class="Economique">
-                <img src= "images/Icones/money-bill-wave-solid.svg " alt= " Economique "/>
-                <figcaption>Economique</figcaption>
-            </figure>
-
-            <figure class="Familial">
-                <img src="Images/Icones/child-solid.svg" alt="familial"/>
-                <figcaption>Familial</figcaption>
-            </figure>
-
-            <figure class="romantique">
-                <img src="Images/Icones/heart-solid.svg" alt="romantique"/>
-                <figcaption>Romantique</figcaption>
-            </figure>
-
-            <figure class="animaux">
-                <img src="Images/Icones/dog-solid.svg" alt="animaux"/>
-                <figcaption>Animaux autorisés</figcaption>
-            </figure>
+            
                 
         </div>
 
     </section>
 
-    <section class="section2">
-        <h2>Hébergements à Marseille</h2>
+    <section class="section2" id="hebergements">
+        <h2>Hébergements à Marseille </h2>
         <figure>
             <a href="*"><img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="img1"/></a>
             <figcaption>Auberge la Cannebière</figcaption>
@@ -140,7 +136,7 @@
 
     <footer>
 
-        <p class="propos">
+        <p id="propos">
             A propos
             <ul>
                 <li><a href="*">Fonctionnement du site</a></li>
@@ -149,7 +145,7 @@
             </ul>
         </p>
 
-        <p class="hebergement">
+        <p id="charte">
             Nos hébergements
             <ul>
                 <li><a href="*">Charte qualité</a></li>
@@ -157,7 +153,7 @@
             </ul>
         </p>
 
-        <p class="Assistance">
+        <p id="Assistance">
             Assistance
             <ul>
                 <li><a href="*">Centre d'aide</a></li>

@@ -16,9 +16,77 @@ body
     background-color: #F2F2F2;
     font-family: 'Raleway', 'Times New Roman', Times, serif;
     font-size: medium;
-    margin:40px;
-    flex-wrap:wrap;
-  
+    min-width: 320px;
+    display:block;
+    margin:45px;  
 }
 
+
+
 /* En-tête */
+
+#liens
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    
+}
+#liens nav a
+{
+    margin-left: 50px;
+    text-decoration: none;
+    color:black;    
+}
+.inscription a
+{
+    color:#0065FC;
+    font-weight:bold;
+    margin-left: 50px;
+    text-decoration: none;
+}
+#liens nav a:hover, #liens nav a:focus, #liens nav a:active
+{
+    color:#0065FC;
+    border-top: 4px #0065FC solid;
+    padding-top:42px;
+} 
+
+/*recherches*/
+.section1
+{
+    margin-top: 30px;
+}
+
+h1
+{
+    font-weight:bold;
+    font-size: large;
+}
+#legende
+{
+    font-size:small;
+}
+.search
+{
+    border:#F2F2F2;
+    font-size:medium;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+
+.bouton
+{
+    background-color: #0065FC;
+    color: white;
+    width: 133px;
+    height:50px;
+    font-size:medium;
+    font-weight:bold;
+    border:1px #0065FC solid;
+    border-radius:0 15px 15px 0;
+}
+
+
+
