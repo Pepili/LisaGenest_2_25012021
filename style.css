@@ -48,7 +48,7 @@ header
     padding-top:43px;
 } 
 
-#inscription a
+.inscription a
 {
     color:#0065FC;
     font-weight:bold;
@@ -70,7 +70,7 @@ h1
     font-size: large;
 }
 
-#legende
+.legende
 {
     font-size:small;
 }
@@ -100,10 +100,9 @@ h1
 }
 
 .filtres
-{
-    
-    display:flex;    
-               
+{    
+    display:flex;   
+                   
 }
 .filtres p
 {
@@ -131,8 +130,7 @@ h1
 }
 .filtres li:first-child
 {
-    justify-self:start;
-    
+    justify-self:start;    
 }
 .filtres li:last-child
 {
@@ -204,37 +202,75 @@ h4
 }
 
 
-#image1 img, #image4 img
+.image1 img, .image4 img
 {
     width:300px;
     height:390px;
     object-fit: cover;    
 }
-#image2 img
+.image2 img
 {
     width:300px;
     height:190px;
     object-fit: cover;
 }
-#image3 img
+.image3 img
 {
     width:300px;
     height:100px;
     object-fit:cover;
 }
-#image5 img
+.image5 img
 {
     width:300px;
     height:140px;
     object-fit:cover;
 }
-#image6 img
+.image6 img
 {
     width:300px;
     height:150px;
     object-fit:cover;
 }
 
+/*footer*/
+
+footer 
+{
+    display: flex;
+    flex-wrap: wrap;          
+}
+footer div
+{
+    display: flex;
+    flex-direction: column;  
+    margin:20px 200px 20px 20px; 
+}
+
+footer a
+{
+    color:black;
+    text-decoration: none;
+    font-size: medium;
+}
+footer ul
+{
+    padding:0;
+}
+footer li
+{
+    list-style:none;
+    margin-bottom:10px;
+}
+.title
+{
+    font-weight: bold;   
+    margin:0;
+}
+footer a:hover
+{
+    color:#0065FC;
+}    
 
 
 
