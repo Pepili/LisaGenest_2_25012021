@@ -11,14 +11,14 @@
     font-style:normal;
 }
 
+
 body
 {
     background-color: #F2F2F2;
     font-family: 'Raleway', 'Times New Roman', Times, serif;
     font-size: medium;
-    min-width: 320px;
-    display:block;
-    margin:45px;  
+    width:100%;
+    margin:0;  
 }
 
 
@@ -26,26 +26,28 @@ body
 /* En-tête */
 header
 {
-    
+    width: 96%;
+    margin:45px 2% 20px 2%;
 }
-.onglet
+.menu
 {
     display:flex;
     flex-wrap:wrap;
-    justify-content:flex-end;    
+    justify-content:flex-end;  
 }
-.onglet nav a
+.menu nav a
 {
     margin-left: 50px;
     text-decoration: none;
     color:black;    
 }
-.onglet nav a:hover
+.menu nav a:hover
 {
     color:#0065FC;
     border-top: 4px #0065FC solid;
-    padding-top:42px;
+    padding-top:43px;
 } 
+
 #inscription a
 {
     color:#0065FC;
@@ -55,16 +57,24 @@ header
 }
 
 
-/*rechercher*/
+/*Section 1*/
+
+.section1
+{
+    width: 96%;
+    margin:2%;
+}
 h1
 {
     font-weight:bold;
     font-size: large;
 }
+
 #legende
 {
     font-size:small;
 }
+
 .search
 {
     border:#F2F2F2;
@@ -86,6 +96,7 @@ h1
     border:1px #0065FC solid;
     border-radius:0 15px 15px 0;
     outline:none;
+    cursor: pointer;
 }
 
 .filtres
@@ -127,7 +138,6 @@ h1
 {
     justify-self:center;
 }
-
 .filtres i
 {
     Margin-right:5px;    
@@ -136,12 +146,98 @@ h1
     padding:10px;
     background-color:#deebff;
 }
-
-
 .filtres li:hover, .filtres li:focus
 {
     color: #0065FC;
     background-color: #DEEBFF;
 }
+
+
+/* Section 4 */
+
+h4
+{
+    margin:45px 0 10px 20px;
+    font-size:large;
+    font-weight: bold;
+}
+
+.figure
+{
+    display: flex; 
+    flex-wrap: wrap;               
+}
+.figure figure
+{
+    margin:18px;
+    border-radius:20px 20px 0 0;
+}
+.figure img
+{
+    border-radius:20px 20px 0 0;
+}
+.figure a
+{
+    text-decoration: none;
+    color:black;
+    font-size: medium;
+    font-weight: bold;
+}
+.figure figcaption
+{
+    margin-top:15px;
+    margin-left:20px;
+}
+.figure a:hover
+{
+    font-size:large;    
+}
+
+
+.block1 figure 
+{
+    height:272px;    
+}
+.block2 figure
+{
+    height:223px;
+}
+
+
+#image1 img, #image4 img
+{
+    width:300px;
+    height:390px;
+    object-fit: cover;    
+}
+#image2 img
+{
+    width:300px;
+    height:190px;
+    object-fit: cover;
+}
+#image3 img
+{
+    width:300px;
+    height:100px;
+    object-fit:cover;
+}
+#image5 img
+{
+    width:300px;
+    height:140px;
+    object-fit:cover;
+}
+#image6 img
+{
+    width:300px;
+    height:150px;
+    object-fit:cover;
+}
+
+
+
+
+
 
 
