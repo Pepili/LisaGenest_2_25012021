@@ -21,7 +21,10 @@ body
     margin:0;  
 }
 
-
+*
+{
+    box-sizing: border-box;
+}
 
 /* En-tête */
 header
@@ -54,6 +57,12 @@ header
     font-weight:bold;
     margin-left: 50px;
     text-decoration: none;
+}
+.active
+{
+    color:#0065FC !important;
+    border-top: 4px #0065FC solid;
+    padding-top:43px;
 }
 
 
@@ -127,6 +136,7 @@ h1
     cursor: pointer;
     margin-right:30px;
     margin-top: 15px;
+    height:40px;
 }
 .filtres li:first-child
 {
@@ -138,11 +148,16 @@ h1
 }
 .filtres i
 {
+    display:block;
+    height: 40px;
+    width:40px;
     Margin-right:5px;    
     color: #0065FC;
     border-radius:100%;
     padding:10px;
     background-color:#deebff;
+    position: relative;    
+    left:-2px;
 }
 .filtres li:hover, .filtres li:focus
 {
