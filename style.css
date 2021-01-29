@@ -178,6 +178,88 @@ h1
     margin-right: 5px;
 }
 
+/* Section 2 */
+
+.section2
+{
+    width: 96%;
+    margin:2%;    
+}
+.figheb
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+
+h2
+{
+    font-weight:bold;
+    font-size: large;    
+    margin:80px 0 5px 20px;
+}
+
+.domaine
+{
+    font-size: medium !important;
+    font-weight: bold !important;
+    padding-top:20px;
+}
+
+.section2 figcaption
+{
+    font-size:small;
+    line-height: 20px;
+    position:absolute;
+    top:130px;   
+    background-color:#F2F2F2; 
+    box-sizing: border-box;
+    width: 100%;    
+    height:40%;
+    padding:10px;
+    border-radius: 0 0 20px 20px;
+}
+.section2 i
+{
+    color: #0065FC;
+}
+
+#vide
+{
+    color:#d9d9d9 !important;
+}
+
+.section2 figure img
+{ 
+    width:250px;
+    height:200px;
+    border-radius: 20px;    
+}
+.section2 figure
+{
+    position:relative; 
+    margin:15px;
+    display:block;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
+    -moz-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
+    box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
+}  
+.afficher
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+    display:block;
+    margin:30px 0 80px 20px;    
+}
+.section2 a:hover
+{
+    color:#0065FC;
+}
+
+
 
 /* Section 4 */
 
