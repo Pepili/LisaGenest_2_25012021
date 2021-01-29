@@ -256,7 +256,11 @@ h2
 }
 .section2 a:hover
 {
-    color:#0065FC;
+    color:#0065FC;    
+}
+.section2 a
+{
+    color:black;
 }
 
 
