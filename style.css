@@ -165,6 +165,19 @@ h1
     background-color: #DEEBFF;
 }
 
+.info p
+{
+    font-size:small;
+}
+.info i
+{
+    color:#0065FC;   
+    border-radius: 100%;
+    border:2px #DEEBFF solid;
+    padding:5px 8px 5px 8px;
+    margin-right: 5px;
+}
+
 
 /* Section 4 */
 
