@@ -313,9 +313,11 @@ h3
 }
 .section3 figcaption
 {
+    display: flex;   
     font-size:small;
     line-height: auto;
     position:absolute;
+    flex-wrap: wrap;
     left:40%;
     bottom:0; 
     line-height: 20px; 
@@ -325,6 +327,11 @@ h3
     height:100%;
     padding:15px;
     border-radius: 0 20px 20px 0;
+}
+.section3 figcaption:first-child
+{
+    width:100%;
+    /* peut être supprimer? */
 }
 .section3 figure
 {
@@ -345,7 +352,7 @@ h3
 }
 .section3 .stars
 {
-    
+    align-self:flex-end;
 }
 
 #graph
