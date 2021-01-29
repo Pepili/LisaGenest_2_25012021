@@ -89,8 +89,12 @@ h1
     border:#F2F2F2;
     font-size:medium;
     margin-left:20px;
-    font-weight:bold;
+    font-weight:bold;    
     outline:none;
+}
+.search::placeholder
+{
+    color:black;
 }
 
 
@@ -178,25 +182,32 @@ h1
     margin-right: 5px;
 }
 
-/* Section 2 */
+/*Section 2 et 3 */
 
+.s2s3
+{
+    display: flex;
+    margin:auto;
+    width:96%;   
+}
+
+/* Section 2 */
 .section2
 {
-    width: 96%;
-    margin:2%;    
+    display:block;  
 }
 .figheb
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;     
 }
 
 h2
 {
     font-weight:bold;
     font-size: large;    
-    margin:80px 0 5px 20px;
+    margin:60px 0 5px 20px;
 }
 
 .domaine
@@ -210,8 +221,7 @@ h2
 {
     font-size:small;
     line-height: 20px;
-    position:absolute;
-    top:130px;   
+    position:absolute;       
     background-color:#F2F2F2; 
     box-sizing: border-box;
     width: 100%;    
@@ -224,23 +234,29 @@ h2
     color: #0065FC;
 }
 
-#vide
+.vide i
 {
     color:#d9d9d9 !important;
 }
 
 .section2 figure img
 { 
-    width:250px;
-    height:200px;
-    border-radius: 20px;    
+    height:60%;
+    width:100%;
+    border-radius: 20px 20px 0 0; 
+    object-fit:cover; 
+    box-sizing: border-box; 
+    
 }
 .section2 figure
 {
     position:relative; 
     margin:15px;
     display:block;
+    width:250px;
+    height:200px;    
     border-radius: 20px;
+    border:4px #F2F2F2 solid;
     -webkit-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
     -moz-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
     box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
@@ -263,7 +279,87 @@ h2
     color:black;
 }
 
+/* Section 3 */
 
+h3
+{
+    font-weight:bold;
+    font-size: large; 
+    margin-left: 40px; 
+    margin-top:65px;         
+}
+
+.domaine2
+{
+    font-size: medium !important;
+    font-weight: bold !important;
+    padding-top:20px;
+}
+
+.section3
+{  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display:block;  
+}   
+
+.section3 figure img
+{
+    width:40%;
+    height:100%;
+    border-radius: 20px 0 0 20px; 
+    object-fit:cover;  
+}
+.section3 figcaption
+{
+    font-size:small;
+    line-height: auto;
+    position:absolute;
+    left:40%;
+    bottom:0; 
+    line-height: 20px; 
+    background-color:#F2F2F2; 
+    box-sizing: border-box;
+    width: 60%;    
+    height:100%;
+    padding:15px;
+    border-radius: 0 20px 20px 0;
+}
+.section3 figure
+{
+    position:relative;    
+    display:block;
+    border-radius: 20px;
+    width:350px;
+    height:145px;
+    border:4px #F2F2F2 solid;
+    -webkit-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
+    -moz-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
+    box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
+}
+
+.section3 .stars i
+{
+    color: #0065FC;        
+}
+.section3 .stars
+{
+    
+}
+
+#graph
+{
+    margin-left:150px;
+}
+.section3 a:hover
+{
+    color:#0065FC;    
+}
+.section3 a
+{
+    color:black;
+}
 
 /* Section 4 */
 
@@ -286,7 +382,7 @@ h4
 }
 .figure img
 {
-    border-radius:20px 20px 0 0;
+    border-radius:20px 20px 0 0;    
 }
 .figure a
 {
