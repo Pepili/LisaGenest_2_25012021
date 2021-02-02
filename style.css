@@ -17,8 +17,8 @@ body
     background-color: #F2F2F2;
     font-family: 'Raleway', 'Times New Roman', Times, serif;
     font-size: medium;
-    width:100%;
-    margin:0;  
+    width:100%;    
+    margin:auto;  
 }
 
 *
@@ -29,14 +29,14 @@ body
 /* En-tête */
 header
 {
-    width: 96%;
-    margin:45px 2% 20px 2%;
+    display:flex;
+    justify-content:space-between;
+    margin:40px 2% 40px 2%;     
 }
 .menu
 {
     display:flex;
-    flex-wrap:wrap;
-    justify-content:flex-end;  
+    flex-wrap:wrap;      
 }
 .menu nav a
 {
@@ -46,13 +46,14 @@ header
 }
 .menu nav
 {
-    order:1;
+    order:1;  
+    flex-wrap: wrap; 
 }
 .menu nav a:hover
 {
     color:#0065FC;
     border-top: 4px #0065FC solid;
-    padding-top:43px;
+    padding-top:36px;
 } 
 
 .inscription a
@@ -60,7 +61,7 @@ header
     color:#0065FC;
     font-weight:bold;
     margin-left: 50px;
-    text-decoration: none;
+    text-decoration: none;    
 }
 .inscription
 {
@@ -70,8 +71,9 @@ header
 {
     color:#0065FC !important;
     border-top: 4px #0065FC solid;
-    padding-top:43px;
+    padding-top:36px;
 }
+
 
 
 /*Section 1*/
@@ -79,7 +81,7 @@ header
 .section1
 {
     width: 96%;
-    margin:2%;
+    margin:0 2% 15px 2%;
 }
 h1
 {
@@ -138,8 +140,7 @@ h1
 }
 .filtres ul
 {
-    display: flex;
-    width:100%; 
+    display: flex;    
     flex-wrap:wrap;
 }
 .filtres li
@@ -298,19 +299,19 @@ h2
     display:flex;
     flex-wrap:nowrap; 
     flex-direction: row; 
-    margin-top:65px;  
+    margin-top:45px;  
     justify-content:space-between;
 }
 h3
 {
     font-weight:bold;
     font-size: large;  
-    margin-left:5px;             
+    margin-left:40px;             
 }
 #graph
 {
     margin-top:20px;
-    margin-right:5px;
+    margin-right:45px;
 }
 .domaine2
 {

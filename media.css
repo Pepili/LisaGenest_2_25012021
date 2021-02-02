@@ -9,9 +9,11 @@ body
 }
 
 /*en-tête*/
-header
+
+.menu
 {
-    margin:auto;
+    display:flex;
+    flex-direction: column;    
 }
 .menu nav
 {
@@ -21,11 +23,7 @@ header
 {
     margin-left:0;
 }
-.menu
-{
-    display:flex;
-    flex-direction: column;    
-}
+
 .inscription
 {
     order:1;
@@ -38,7 +36,7 @@ header
 .menu nav a:hover
 {
     border-bottom: 4px #0065FC solid;
-    padding-bottom:20px;
+    padding-bottom:10px;
     border-top:none;
 } 
 .active
