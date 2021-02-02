@@ -6,21 +6,24 @@
     <title>Reservia</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./fontawesome/css/all.min.css"/>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="media.css" />
 </head>
 
 <body>
 
-    <header>  
+    <header> 
+        <img src="./images/logo/Reservia.svg" alt="logo"/>   
         <div class="menu">
+            <div class="inscription">
+                <a href="#">S'inscrire</a>
+            </div> 
             <nav>
                 <a class="active" href="#hebergements">Hébergements</a>
                 <a href="#activites">Activités</a>
             </nav>
-            <div class="inscription">
-                <a href="#">S'inscrire</a>
-            </div>
-        </div>
-        <img src="./images/logo/Reservia.svg" alt="logo"/>         
+                      
+        </div>                
     </header>
 
     <section class="section1">
@@ -30,6 +33,9 @@
         <form method="post" action="#.php">
             <i class="fas fa-map-marker-alt fa-1em"></i><input type="search" placeholder="Marseille, France..." name="localisation" class="search"/>
             <input type="submit" value="Rechercher" class="bouton"/>
+            <button name="loupe" type="submit" class="loupe">
+                <i class="fas fa-search"></i>                
+            </button> 
         </form>
         <div class="filtres">
             <p>
@@ -154,7 +160,7 @@
         </section>
 
         <section class="section3">
-            <h3>Les plus populaires <i id="graph" class="fas fa-chart-line"></i></h3>
+            <div class="h3"><h3>Les plus populaires </h3><i id="graph" class="fas fa-chart-line"></i></div>
             <a href="#">
                 <figure>
                     <img src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotelsoleil"/>

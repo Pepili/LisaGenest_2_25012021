@@ -1,0 +1,132 @@
+/*Responsive*/
+
+body
+{
+    width:96%;
+    margin:auto;
+    display:flex;    
+    flex-direction:column;     
+}
+
+/*en-tête*/
+header
+{
+    margin:auto;
+}
+.menu nav
+{
+    order:2;     
+}
+.menu nav a
+{
+    margin-left:0;
+}
+.menu
+{
+    display:flex;
+    flex-direction: column;    
+}
+.inscription
+{
+    order:1;
+    align-self:flex-end;    
+}
+.inscription a
+{
+    margin:0;
+}
+.menu nav a:hover
+{
+    border-bottom: 4px #0065FC solid;
+    padding-bottom:20px;
+    border-top:none;
+} 
+.active
+{
+    border-top: none;    
+    border-bottom: 4px #0065FC solid;
+    padding-bottom:10px;
+}
+
+/*section1*/
+.loupe
+{
+    display:inline;
+    background-color: #0065FC;
+    color:#DEEBFF;
+    padding:10px;
+    font-size:medium;
+    font-weight:bold;
+    border:1px #0065FC solid;
+    border-radius:10px;
+    outline:none;
+    cursor: pointer;
+}
+.bouton
+{ 
+    display:none;
+}
+/*section2*/
+.section2 figure
+{
+    width:100%;
+    margin-left:auto;
+    box-shadow:none;
+}
+/*section3*/
+.section3 figure
+{
+    width:96%;
+    margin:auto;    
+}
+
+
+/*section2et3*/
+.s2s3
+{
+    flex-direction: column;
+}
+.section2
+{
+    order:2;
+}
+.section3
+{
+    order:1;
+}
+
+/*section4*/
+.figure img
+{
+    width:96%;
+    height:130px;
+    object-fit: cover;   
+    margin:auto; 
+}
+.figure figure
+{
+    margin-bottom:30px;
+}
+.figure
+{
+    display:flex;
+    flex-direction: column;
+}
+
+/*pied de page*/
+footer
+{
+    flex-direction:column;
+    width:96%;
+    margin:auto;
+}
+footer div
+{
+    margin:0 0 10px 0;
+}
+.propos
+{
+    margin-top:80px;
+}
+
+

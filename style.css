@@ -44,6 +44,10 @@ header
     text-decoration: none;
     color:black;    
 }
+.menu nav
+{
+    order:1;
+}
 .menu nav a:hover
 {
     color:#0065FC;
@@ -57,6 +61,10 @@ header
     font-weight:bold;
     margin-left: 50px;
     text-decoration: none;
+}
+.inscription
+{
+    order:2;
 }
 .active
 {
@@ -92,6 +100,10 @@ h1
     font-weight:bold;    
     outline:none;
 }
+.loupe
+{
+    display:none;
+}
 .search::placeholder
 {
     color:black;
@@ -115,6 +127,7 @@ h1
 .filtres
 {    
     display:flex;   
+    flex-wrap: wrap;
                    
 }
 .filtres p
@@ -126,8 +139,8 @@ h1
 .filtres ul
 {
     display: flex;
-    width:100%;  
-
+    width:100%; 
+    flex-wrap:wrap;
 }
 .filtres li
 {
@@ -280,15 +293,25 @@ h2
 }
 
 /* Section 3 */
-
+.h3
+{
+    display:flex;
+    flex-wrap:nowrap; 
+    flex-direction: row; 
+    margin-top:65px;  
+    justify-content:space-between;
+}
 h3
 {
     font-weight:bold;
-    font-size: large; 
-    margin-left: 40px; 
-    margin-top:65px;         
+    font-size: large;  
+    margin-left:5px;             
 }
-
+#graph
+{
+    margin-top:20px;
+    margin-right:5px;
+}
 .domaine2
 {
     font-size: medium !important;
@@ -355,10 +378,6 @@ h3
     align-self:flex-end;
 }
 
-#graph
-{
-    margin-left:150px;
-}
 .section3 a:hover
 {
     color:#0065FC;    
@@ -518,7 +537,9 @@ footer li
 footer a:hover
 {
     color:#0065FC;
-}    
+}   
+
+
 
 
 
