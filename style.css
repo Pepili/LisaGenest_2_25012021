@@ -126,7 +126,6 @@ h1
     color:black;
 }
 
-
 .bouton
 {
     background-color: #0065FC;
@@ -151,7 +150,7 @@ h1
 {
     margin-top:40px;
     font-size:medium;
-    font-weight:bold;
+    font-weight:bold;    
 }
 .filtres ul
 {
@@ -197,18 +196,25 @@ h1
     color: #0065FC;
     background-color: #DEEBFF;
 }
-
+.info
+{
+    display:flex;    
+}
 .info p
 {
     font-size:small;
 }
 .info i
 {
-    color:#0065FC;   
+    color: #0065FC;
     border-radius: 100%;
-    border:2px #DEEBFF solid;
-    padding:5px 8px 5px 8px;
+    border: 2px #DEEBFF solid;
+    padding: 4px 8px 5px 8px;
     margin-right: 5px;
+    display: block;
+    height: 25px;
+    width: 25px;
+    margin-top: 10px;
 }
 
 /*Section 2 et 3 */
@@ -569,8 +575,6 @@ footer a:hover
 { 
 body
 {
-    width:96%;
-    margin:auto;
     display:flex;    
     flex-direction:column; 
     flex-wrap:wrap;    
@@ -586,7 +590,7 @@ header
     display:inline;
     display:flex;
     flex-direction:column;          
-    margin:40px 2% 40px 2%;      
+    margin:40px 20px 20px 20px;      
     flex-wrap:wrap;    
 }
 .debut
@@ -614,7 +618,8 @@ header
 
 .inscription
 {
-    order:1;       
+    order:1;  
+    margin-top:14px;     
 }
 .inscription a
 {
@@ -638,6 +643,19 @@ header
 }
 
 /*section1*/
+.section1
+{
+    width:90%;
+    margin:auto;
+}
+.formsearch
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+
 .loupe
 {
     display:inline;
@@ -655,25 +673,64 @@ header
 { 
     display:none;
 }
-/*section2*/
-.section2 figure
+.filtres ul
 {
-    width:100%;
-    margin-left:auto;
-    box-shadow:none;
+    padding-inline-start:0;
+    margin-top:0;
 }
-/*section3*/
-.section3 figure
+.filtres p
 {
-    width:96%;
-    margin:auto;    
+    margin-bottom: 0;
 }
 
+
+/*section2*/
+h2
+{
+    margin-left:20px;
+    margin-top:40px;
+}
+.section2 figure
+{
+    width:90%;
+    margin:auto;
+    box-shadow:none;
+    margin-bottom:20px;
+    border:#ffffff;
+}
+.section2
+{
+    background-color:#ffffff;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+/*section3*/
+h3
+{
+    margin-left:20px;
+}
+.section3 figure
+{
+    width:90%;
+    margin:auto;  
+    border:0;
+    margin-bottom:20px;  
+}
+.section3
+{
+    width:100%;
+    border-radius:0;   
+    align-items: center;
+    justify-content: center; 
+}
 
 /*section2et3*/
 .s2s3
 {
-    flex-direction: column;
+    flex-direction: column; 
+    width:100%;
+    margin:0;
 }
 .section2
 {
