@@ -18,7 +18,7 @@ body
     font-family: 'Raleway', 'Times New Roman', Times, serif;
     font-size: medium;
     width:100%;    
-    margin:auto;  
+    margin:auto;    
 }
 
 *
@@ -27,29 +27,36 @@ body
 }
 
 /* En-tête */
+.header2
+{
+    display:none;
+}
 header
 {
-    display:flex;
-    justify-content:space-between;
-    margin:40px 2% 40px 2%;     
+    display:flex;        
+    margin:40px 2% 40px 2%;      
+    flex-wrap:wrap;
+    justify-content: space-between;         
 }
 .menu
 {
     display:flex;
-    flex-wrap:wrap;      
 }
-.menu nav a
+
+header nav a
 {
     margin-left: 50px;
     text-decoration: none;
-    color:black;    
+    color:black;  
+     
 }
-.menu nav
+header nav
 {
-    order:1;  
-    flex-wrap: wrap; 
+   flex-wrap: wrap;
+   order:1;  
+  
 }
-.menu nav a:hover
+header nav a:hover
 {
     color:#0065FC;
     border-top: 4px #0065FC solid;
@@ -61,12 +68,14 @@ header
     color:#0065FC;
     font-weight:bold;
     margin-left: 50px;
-    text-decoration: none;    
+    text-decoration: none;   
+       
 }
 .inscription
 {
-    order:2;
+    order:2; 
 }
+
 .active
 {
     color:#0065FC !important;
@@ -540,8 +549,162 @@ footer a:hover
     color:#0065FC;
 }   
 
+/*Responsive*/
+
+@media all and (max-device-width: 480px)
+{ 
+body
+{
+    width:96%;
+    margin:auto;
+    display:flex;    
+    flex-direction:column; 
+    flex-wrap:wrap;    
+}
+
+/*en-tête*/
+header
+{
+    display:none;
+}
+.header2
+{
+    display:inline;
+    display:flex;
+    flex-direction:column;          
+    margin:40px 2% 40px 2%;      
+    flex-wrap:wrap;
+    overflow: scroll;
+}
+.debut
+{
+    display:flex;
+    justify-content: space-between;
+}
 
 
+.header2 nav
+{
+    order:2;  
+    display:flex;
+    justify-content:space-around;  
+    width:100%;
+    margin-top:30px;  
+    border-bottom: 2px #f2f2f2;
+}
+.header2 nav a
+{
+    margin-left:0;    
+    text-decoration: none;
+    color:black;  
+}
+
+.inscription
+{
+    order:1;       
+}
+.inscription a
+{
+    margin:0;
+    color:#0065FC;
+    font-weight:bold;    
+    text-decoration: none;  
+}
+.header2 nav a:hover
+{
+    border-bottom: 2px #0065FC solid;
+    padding-bottom:10px;
+    border-top:none;
+} 
+.active
+{
+    border-top: none;    
+    border-bottom: 2px #0065FC solid;
+    padding-bottom:10px;
+    padding-top:0;
+}
+
+/*section1*/
+.loupe
+{
+    display:inline;
+    background-color: #0065FC;
+    color:#DEEBFF;
+    padding:10px;
+    font-size:medium;
+    font-weight:bold;
+    border:1px #0065FC solid;
+    border-radius:10px;
+    outline:none;
+    cursor: pointer;
+}
+.bouton
+{ 
+    display:none;
+}
+/*section2*/
+.section2 figure
+{
+    width:100%;
+    margin-left:auto;
+    box-shadow:none;
+}
+/*section3*/
+.section3 figure
+{
+    width:96%;
+    margin:auto;    
+}
+
+
+/*section2et3*/
+.s2s3
+{
+    flex-direction: column;
+}
+.section2
+{
+    order:2;
+}
+.section3
+{
+    order:1;
+}
+
+/*section4*/
+.figure img
+{
+    width:96%;
+    height:130px;
+    object-fit: cover;   
+    margin:auto; 
+}
+.figure figure
+{
+    margin-bottom:30px;
+}
+.figure
+{
+    display:flex;
+    flex-direction: column;
+}
+
+/*pied de page*/
+footer
+{
+    flex-direction:column;
+    width:96%;
+    margin:auto;
+}
+footer div
+{
+    margin:0 0 10px 0;
+}
+.propos
+{
+    margin-top:80px;
+}
+}
 
 
 
