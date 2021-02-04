@@ -570,6 +570,456 @@ footer a:hover
 }   
 
 /*Responsive*/
+@media all and (max-device-width:1600px)
+{
+    
+}
+@media all and (max-device-width:1024px)
+{
+/*en-tête*/
+.filtres p
+{
+    margin:25px 20px 0 0;   
+
+}
+.filtres
+{
+    margin-top:20px;
+}
+
+/*section1*/
+.section1
+{
+    width:90%;
+    margin:auto;    
+}
+h1
+{
+    margin-top:20px;
+}
+.legende
+{
+    margin-bottom:20px;
+}
+.section1 ul
+{
+    padding:0;
+    margin-top:0;
+}
+.info
+{
+    margin-bottom:20px;
+}
+
+/*section2*/
+h2
+{
+    margin-left:30px;
+    margin-top:40px;
+}
+.figheb
+{
+    width: 100%;
+    margin:auto;
+    justify-content:space-around;
+}
+.section2 figure
+{
+    box-shadow:none;
+    margin-bottom:20px;
+    border:#ffffff;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;       
+    width:300px;   
+
+}
+.section2
+{
+    background-color:#ffffff;
+    width:100%;    
+    order:2;
+    display:flex;
+    flex-direction:column;
+}
+.section2 figcaption
+{
+    position:relative;
+}
+.section2 a
+{
+    text-decoration: none;
+}
+.afficher
+{
+    margin-bottom:30px;
+}
+/*section3*/
+h3
+{
+    margin-left:40px;
+    margin-bottom:20px;
+}
+.section3 figure
+{
+    width:90%;
+    margin:auto;  
+    border:0;
+    margin-bottom:20px;  
+}
+.section3
+{
+    width:100%;
+    border-radius:0; 
+    order:1;
+    padding-bottom:20px;   
+}
+.section3 figcaption
+{
+    display:block;
+}
+
+/*section2et3*/
+.s2s3
+{
+    flex-direction: column; 
+    width:100%;
+    margin:0;
+}
+
+/*section4*/
+h4
+{
+    margin-left:40px;
+}
+.section4
+{
+    width:100%;    
+     display:flex;
+    flex-direction:column;
+}
+.figure img
+{
+    height:130px;
+    object-fit: cover;
+    width: 300px;   
+}
+.figure figure
+{
+    width:300px;
+    margin-bottom:30px;
+}
+.figure
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*pied de page*/
+footer div
+{
+    margin:170px 100px 20px 20px;
+}
+
+}
+@media all and (max-device-width:768px)
+{
+    body
+{
+    display:flex;    
+    flex-direction:column; 
+    flex-wrap:wrap;    
+}
+
+/*en-tête*/
+header
+{
+    display:none;
+}
+.header2
+{
+    display:inline;
+    display:flex;
+    flex-direction:column;          
+    margin:40px 20px 20px 20px;      
+    flex-wrap:wrap;    
+}
+.debut
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.header2 nav
+{
+    order:2;  
+    display:flex;
+    justify-content:space-around;  
+    width:100%;
+    margin-top:30px;  
+    border-bottom: 2px #f2f2f2;
+}
+.header2 nav a
+{
+    margin-left:0;    
+    text-decoration: none;
+    color:black;  
+}
+
+.inscription
+{
+    order:1;  
+    margin-top:14px;     
+}
+.inscription a
+{
+    margin:0;
+    color:#0065FC;
+    font-weight:bold;    
+    text-decoration: none;  
+}
+.header2 nav a:hover
+{
+    border-bottom: 2px #0065FC solid;
+    padding-bottom:10px;
+    border-top:none;
+} 
+.active
+{
+    border-top: none;    
+    border-bottom: 2px #0065FC solid;
+    padding-bottom:10px;
+    padding-top:0;
+}
+
+/*section1*/
+.section1
+{
+    width:90%;
+    margin:auto;    
+}
+h1
+{
+    margin-top:20px;
+}
+.legende
+{
+    margin-bottom:20px;
+}
+.section1 ul
+{
+    padding:0;
+    margin-top:0;
+}
+.info
+{
+    margin-bottom:20px;
+}
+
+/*section2*/
+h2
+{
+    margin-left:30px;
+    margin-top:40px;
+}
+.figheb
+{
+    width: 100%;
+    margin:auto;    
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;    
+    
+}
+.figheb figure
+{
+    box-shadow:none;
+    margin-bottom:20px;
+    border:#ffffff;
+    width:300px;   
+
+}
+.section2
+{
+    background-color:#ffffff;
+    width:100%;    
+    order:2;
+    display:flex;
+    flex-direction:column;
+}
+.section2 figcaption
+{
+    position:relative;
+}
+.section2 a
+{
+    text-decoration: none;
+}
+.afficher
+{
+    margin-bottom:30px;
+}
+/*section3*/
+h3
+{
+    margin-left:40px;
+    margin-bottom:20px;
+}
+.section3 figure
+{
+    width:90%;
+    margin:auto;  
+    border:0;
+    margin-bottom:20px;  
+}
+.section3
+{
+    width:100%;
+    border-radius:0; 
+    order:1;
+    padding-bottom:20px;   
+}
+.section3 figcaption
+{
+    display:block;
+}
+
+/*section2et3*/
+.s2s3
+{
+    flex-direction: column; 
+    width:100%;
+    margin:0;
+}
+
+/*section4*/
+h4
+{
+    margin-left:40px;
+}
+.figure img
+{
+    height:130px;
+    object-fit: cover;
+    width: 300px;   
+}
+.figure figure
+{
+    width:300px;
+    margin-bottom:30px;
+}
+.figure
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section4
+{
+    width:100%;    
+     display:flex;
+    flex-direction:column;
+}
+
+/*pied de page*/
+footer
+{
+    flex-direction:column;
+    width:90%;
+    margin:auto;
+}
+footer div
+{
+    margin:0 0 10px 0;
+}
+.propos
+{
+    margin-top:80px;
+}
+}
+
+@media all and (min-width: 481px) and (max-width: 659px)
+{
+ /*section2*/
+h2
+{
+    margin-left:30px;
+    margin-top:40px;
+    align-self: start;
+}
+.section2 figure
+{
+    width:90%;
+    margin:auto;
+    box-shadow:none;
+    margin-bottom:20px;
+    border:#ffffff;
+}
+.section2
+{
+    background-color:#ffffff;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    order:2;
+}
+.afficher
+{
+    align-self: start;
+    margin-left:30px;
+    margin-top:0;
+}
+.figheb
+{
+    display:block;
+}
+}
+
+
+@media all and (min-width: 481px) and (max-width: 599px)
+{
+    h4
+{
+    margin-left:25px;
+
+}
+
+.figure figure img
+{
+    height:130px;
+    object-fit: cover;  
+    width: 100%;   
+}
+.figure figure
+{
+    width:90%;
+    margin: auto;
+    margin-bottom:30px;
+}
+.figure
+{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;     
+}
+.image3, .image6
+{
+    margin:auto;
+    width:100%;
+}
+
+.section4
+{
+    width:100%;    
+    display:flex;
+    flex-direction:column;
+}
+}
 
 @media all and (max-device-width: 480px)
 { 
@@ -660,7 +1110,7 @@ header
 {
     display:inline;
     background-color: #0065FC;
-    color:#DEEBFF;
+    color:#ffffff;
     padding:10px;
     font-size:medium;
     font-weight:bold;
@@ -687,8 +1137,9 @@ header
 /*section2*/
 h2
 {
-    margin-left:20px;
+    margin-left:30px;
     margin-top:40px;
+    align-self: start;
 }
 .section2 figure
 {
@@ -704,6 +1155,17 @@ h2
     width:100%;
     align-items: center;
     justify-content: center;
+    order:2;
+}
+.afficher
+{
+    align-self: start;
+    margin-left:30px;
+    margin-top:0;
+}
+.figheb
+{
+    display:block;
 }
 /*section3*/
 h3
@@ -723,6 +1185,8 @@ h3
     border-radius:0;   
     align-items: center;
     justify-content: center; 
+    order:1;
+    padding-bottom:20px;
 }
 
 /*section2et3*/
@@ -732,38 +1196,54 @@ h3
     width:100%;
     margin:0;
 }
-.section2
-{
-    order:2;
-}
-.section3
-{
-    order:1;
-}
 
 /*section4*/
-.figure img
+
+h4
 {
-    width:96%;
+    margin-left:25px;
+
+}
+
+.figure figure img
+{
     height:130px;
-    object-fit: cover;   
-    margin:auto; 
+    object-fit: cover;  
+    width: 100%;   
 }
 .figure figure
 {
+    width:90%;
+    margin: auto;
     margin-bottom:30px;
 }
 .figure
 {
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
+
+.section4
+{
+    width:100%;    
+    display:flex;
+    flex-direction:column;
+}
+.image6, .image3
+{
+    margin:auto;
+    width:100%
+}
+
+
+
 
 /*pied de page*/
 footer
 {
     flex-direction:column;
-    width:96%;
+    width:90%;
     margin:auto;
 }
 footer div
