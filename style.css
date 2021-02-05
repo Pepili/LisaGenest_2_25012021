@@ -233,7 +233,7 @@ h1
     display:block;  
     background-color: #F2F2F2;
     border-radius:20px; 
-    width:55%;   
+    width:60%;   
 }
 .figheb
 {
@@ -316,6 +316,7 @@ h2
 .section2 a
 {
     color:black;
+
 }
 
 /* Section 3 */
@@ -334,7 +335,7 @@ h3
 #graph
 {
     margin-top:20px;
-    margin-right:45px;
+    margin-right:45px;    
 }
 .domaine2
 {
@@ -434,11 +435,10 @@ h4
 .figure
 {
     display:grid;
-    grid-template-columns: repeat(4, 300px); 
+    grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(2, 211.5px);
-    grid-column-gap:auto; 
-    align-items:stretch;   
-    justify-content:space-between;  
+    grid-column-gap:4%; 
+    align-items:stretch;  
 }
 .image1
 {
@@ -454,7 +454,8 @@ h4
 {
     grid-row:2;
     grid-column: 2;
-    align-self:end;
+    margin-top:32px;
+    padding-top:37px;
 }
 
 .image4
@@ -470,17 +471,19 @@ h4
 .image6
 {
     grid-row: 2;
-    grid-column: 4;
-    align-self:end;
-    
+    grid-column: 4;   
+    margin-top:24px;
 }
 .figure figure
 {
     margin:0;
-}
-.figure figcaption
-{
-    margin:10px 0 0 5px;
+    position:relative;     
+    display:block;
+    width:300px;          
+    border-radius: 20px;    
+    -webkit-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
+    -moz-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
+    box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
 }
 
 .figure img
@@ -499,35 +502,115 @@ h4
 {
     color:#0065FC;    
 }
+.image1 figure, .image4 figure
+{
+    height:444px;
+}
 .image1 img, .image4 img
 {
-    width:300px;
-    height:390px;
+    width:100%;     
+    display: block;
+    height:85%;
     object-fit: cover;    
+}
+.image1 figcaption, .image4 figcaption
+{
+    line-height: 20px;
+    position: absolute;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 15%;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+.image2 figure
+{
+    height:240px;
 }
 .image2 img
 {
-    width:300px;
-    height:190px;
+    width:100%;      
+    display: block;
+    height:75%;
     object-fit: cover;
+}
+.image2 figcaption
+{
+    line-height: 20px;
+    position: absolute;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25%;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+.image3 figure
+{
+    height:165px;
 }
 .image3 img
 {
-    width:300px;
-    height:100px;
+    width:100%;     
+    display: block;
+    height:70%;
     object-fit:cover;    
+}
+.image3 figcaption
+{
+    line-height: 20px;
+    position: absolute;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30%;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+}
+.image5 figure
+{
+    height:195px;
 }
 .image5 img
 {
-    width:300px;
-    height:140px;
+    width:100%;     
+    display: block;
+    height:70%;
     object-fit:cover;
+}
+.image5 figcaption
+{
+    line-height: 20px;
+    position: absolute;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30%;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+}
+.image6 figure
+{
+    height:210px;
 }
 .image6 img
 {
-    width:300px;
-    height:150px;
+    width:100%;      
+    display: block;
+    height:70%;
     object-fit:cover;
+}
+.image6 figcaption
+{
+    line-height: 20px;
+    position: absolute;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
 }
 
 /*footer*/
@@ -572,8 +655,80 @@ footer a:hover
 /*Responsive*/
 @media all and (max-device-width:1600px)
 {
-    
+/*section2*/
+
+.section2 a
+{
+    width:250px;
+    max-width:100%;
+    display:flex;
+    flex-grow:1;
+}   
+.section2 figure
+{
+    flex-grow:1;
+} 
+.section2
+{
+    padding:3%;
+    width:65%;
 }
+h2
+{
+    margin-left:20px;
+    margin-bottom:0;
+    margin-top:0;
+}
+.afficher
+{
+    margin-bottom:0;
+    margin-top:40px;
+}
+
+/*section3*/
+.section3
+{
+    padding:3%;
+    display:flex;
+    width:30%;
+}
+.h3
+{
+    margin-top:0;
+}
+h3
+{
+    margin-top:0;
+}
+#graph
+{
+    margin-top:0;
+    margin-right:0;
+}
+.section3 a
+{
+    width:500px;
+    display:flex;
+    max-width:100%;
+    flex-grow:1;
+    height:145px;
+    max-height:100%;
+    margin-bottom:10%;
+}
+.section3 figure
+{
+    height:145px;
+    max-height:100%;
+    display:flex;
+    flex-grow:1;
+}
+/*footer*/
+footer div
+{
+    margin-right: 10%;
+}
+}
+
 @media all and (max-device-width:1024px)
 {
 /*en-tête*/
@@ -625,14 +780,12 @@ h2
 }
 .section2 figure
 {
-    box-shadow:none;
     margin-bottom:20px;
     border:#ffffff;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;       
     width:300px;   
-
 }
 .section2
 {
@@ -657,7 +810,7 @@ h2
 /*section3*/
 h3
 {
-    margin-left:40px;
+    
     margin-bottom:20px;
 }
 .section3 figure
@@ -673,12 +826,21 @@ h3
     border-radius:0; 
     order:1;
     padding-bottom:20px;   
+    padding:5%;
 }
 .section3 figcaption
 {
-    display:block;
+    display:block;    
 }
-
+.section3 a
+{
+    width:100%;
+    margin-bottom:5%;
+}
+.section3 figure img
+{
+    object-position:20% 70%;    
+}
 /*section2et3*/
 .s2s3
 {
@@ -719,7 +881,7 @@ h4
 /*pied de page*/
 footer div
 {
-    margin:170px 100px 20px 20px;
+    margin:170px 5% 20px 5%;
 }
 
 }
@@ -729,7 +891,7 @@ footer div
 {
     display:flex;    
     flex-direction:column; 
-    flex-wrap:wrap;    
+    flex-wrap:wrap;   
 }
 
 /*en-tête*/
@@ -836,7 +998,6 @@ h2
 }
 .figheb figure
 {
-    box-shadow:none;
     margin-bottom:20px;
     border:#ffffff;
     width:300px;   
@@ -865,7 +1026,7 @@ h2
 /*section3*/
 h3
 {
-    margin-left:40px;
+    margin-left:0px;
     margin-bottom:20px;
 }
 .section3 figure
@@ -880,7 +1041,8 @@ h3
     width:100%;
     border-radius:0; 
     order:1;
-    padding-bottom:20px;   
+    padding-bottom:20px;  
+    padding:5%; 
 }
 .section3 figcaption
 {
@@ -948,35 +1110,42 @@ footer div
  /*section2*/
 h2
 {
-    margin-left:30px;
     margin-top:40px;
     align-self: start;
+    margin-bottom:30px;
+    margin-left:0;
 }
 .section2 figure
 {
     width:90%;
     margin:auto;
-    box-shadow:none;
-    margin-bottom:20px;
+    margin-bottom:30px;
     border:#ffffff;
 }
 .section2
 {
     background-color:#ffffff;
     width:100%;
-    align-items: center;
-    justify-content: center;
     order:2;
+    padding:5%;
+}
+.section2 a
+{
+    width:100%;
 }
 .afficher
 {
-    align-self: start;
-    margin-left:30px;
+    align-self: start;   
     margin-top:0;
+    margin-left:0;
 }
 .figheb
 {
     display:block;
+}
+.section2 figure img
+{
+    object-position: 20% 60%;
 }
 }
 
@@ -1137,16 +1306,16 @@ header
 /*section2*/
 h2
 {
-    margin-left:30px;
+    margin-left:0;
     margin-top:40px;
     align-self: start;
+    margin-bottom:20px;
 }
 .section2 figure
 {
     width:90%;
-    margin:auto;
-    box-shadow:none;
-    margin-bottom:20px;
+    margin:auto;    
+    margin-bottom:30px;
     border:#ffffff;
 }
 .section2
@@ -1156,6 +1325,11 @@ h2
     align-items: center;
     justify-content: center;
     order:2;
+    padding:5%;    
+}
+.section2 a
+{
+    width:100%;
 }
 .afficher
 {
@@ -1170,7 +1344,7 @@ h2
 /*section3*/
 h3
 {
-    margin-left:20px;
+    margin-left:0;
 }
 .section3 figure
 {
@@ -1182,9 +1356,7 @@ h3
 .section3
 {
     width:100%;
-    border-radius:0;   
-    align-items: center;
-    justify-content: center; 
+    border-radius:0;       
     order:1;
     padding-bottom:20px;
 }
