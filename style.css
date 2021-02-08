@@ -2,11 +2,11 @@
 @font-face
 {
     font-family: 'Raleway';
-    src: url('Raleway/raleway-v18-latin-regular.ttf');
-    src: url('Raleway/raleway-v18-latin-regular.svg'),
-         url('Raleway/raleway-v18-latin-regular.eot'),
-         url('Raleway/raleway-v18-latin-regular.woff'),
-         url('Raleway/raleway-v18-latin-regular.woff2');
+    src: url('Raleway/Raleway-Regular.ttf');
+    src: url('Raleway/Raleway-Regular.svg'),
+         url('Raleway/Raleway-Regular.eot'),
+         url('Raleway/Raleway-Regular.woff'),
+         url('Raleway/Raleway-Regular.woff2');
     font-weight: normal;
     font-style:normal;
 }
@@ -27,63 +27,56 @@ body
 }
 
 /* En-tête */
-.header2
-{
-    display:none;
-}
-header
-{
-    display:flex;        
-    margin:40px 2% 40px 2%;      
-    flex-wrap:wrap;
-    justify-content: space-between;         
-}
-.menu
+
+ul.menu
 {
     display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items:stretch;
+    margin:0 10px 0 10px;
+    padding:0;
+    list-style:none;
 }
-
-header nav a
+li.logo
 {
-    margin-left: 50px;
+    padding:10px;
+    height:130px;
+    flex: 1 0 140px;
+    line-height:150px;
+}
+li.logo img
+{
+    height:55px;
+}
+header li:not(.logo)
+{
+    display:block;
+    margin:0 10px;
+    line-height: 80px;
+    border-top:2px solid transparent;
+    padding:20px;
+}
+li.active
+{
+    border-top: 2px solid #0065FC !important;
+    
+}
+nav a
+{
     text-decoration: none;
-    color:black;  
-     
 }
-header nav
-{
-   flex-wrap: wrap;
-   order:1;  
-  
-}
-header nav a:hover
-{
-    color:#0065FC;
-    border-top: 4px #0065FC solid;
-    padding-top:36px;
-} 
-
 .inscription a
 {
-    color:#0065FC;
-    font-weight:bold;
-    margin-left: 50px;
-    text-decoration: none;   
+    color:#0065FC !important;
+    font-weight:bold;    
        
 }
-.inscription
+a:visited 
 {
-    order:2; 
+    text-decoration: none;
+    color: #000000;
 }
-
-.active
-{
-    color:#0065FC !important;
-    border-top: 4px #0065FC solid;
-    padding-top:36px;
-}
-
-
 
 /*Section 1*/
 
@@ -109,13 +102,17 @@ h1
     font-size:medium;
     font-weight:bold;    
     outline:none;
-    height:50px;
+    height:100%;
     background-color:#ffffff;
 }
-.form
+.formsearch
 {
     display:block;
-    border:1px #f2f2f2;
+    border-top:2px #f2f2f2 solid;      
+    border-bottom:2px #f2f2f2 solid; 
+    height:50px;
+    width:max-content;
+    border-radius: 15px;
 }
 .loupe
 {
@@ -129,15 +126,22 @@ h1
 .bouton
 {
     background-color: #0065FC;
-    color:#ffffff;
-    width: 133px;
-    height:50px;
+    color:#ffffff;    
+    height:100%;
     font-size:medium;
     font-weight:bold;
     border:1px #0065FC solid;
     border-radius:0 15px 15px 0;
     outline:none;
     cursor: pointer;
+    padding: 10px;
+}
+#locale
+{
+    background-color: #F2F2F2;
+    padding:15px;
+    border-radius:15px 0 0 15px;
+    margin-right:15px;
 }
 
 .filtres
@@ -424,6 +428,7 @@ h3
 {
     width:96%;
     margin:auto;
+    margin-bottom:80px;
 }
 h4
 {
@@ -437,7 +442,7 @@ h4
     display:grid;
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(2, 211.5px);
-    grid-column-gap:4%; 
+    grid-column-gap:2%; 
     align-items:stretch;  
 }
 .image1
@@ -477,9 +482,8 @@ h4
 .figure figure
 {
     margin:0;
-    position:relative;     
-    display:block;
-    width:300px;          
+    position:relative;    
+    width:100%;             
     border-radius: 20px;    
     -webkit-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
     -moz-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
@@ -618,13 +622,15 @@ h4
 footer 
 {
     display: flex;
-    flex-wrap: wrap;          
+    flex-wrap: wrap;   
+    width:100%;
+    background-color: #F2F2F2;
+    padding:40px;       
 }
 footer div
 {
     display: flex;
-    flex-direction: column;  
-    margin:170px 200px 20px 20px; 
+    flex-direction: column;     
 }
 
 footer a
@@ -743,11 +749,7 @@ footer div
 }
 
 /*section1*/
-.section1
-{
-    width:90%;
-    margin:auto;    
-}
+
 h1
 {
     margin-top:20px;
@@ -878,88 +880,16 @@ h4
     flex-wrap: wrap;
     justify-content: space-around;
 }
-/*pied de page*/
-footer div
-{
-    margin:170px 5% 20px 5%;
-}
+
 
 }
 @media all and (max-device-width:768px)
 {
-    body
-{
-    display:flex;    
-    flex-direction:column; 
-    flex-wrap:wrap;   
-}
-
-/*en-tête*/
-header
-{
-    display:none;
-}
-.header2
-{
-    display:inline;
-    display:flex;
-    flex-direction:column;          
-    margin:40px 20px 20px 20px;      
-    flex-wrap:wrap;    
-}
-.debut
-{
-    display:flex;
-    justify-content: space-between;
-}
-
-
-.header2 nav
-{
-    order:2;  
-    display:flex;
-    justify-content:space-around;  
-    width:100%;
-    margin-top:30px;  
-    border-bottom: 2px #f2f2f2;
-}
-.header2 nav a
-{
-    margin-left:0;    
-    text-decoration: none;
-    color:black;  
-}
-
-.inscription
-{
-    order:1;  
-    margin-top:14px;     
-}
-.inscription a
-{
-    margin:0;
-    color:#0065FC;
-    font-weight:bold;    
-    text-decoration: none;  
-}
-.header2 nav a:hover
-{
-    border-bottom: 2px #0065FC solid;
-    padding-bottom:10px;
-    border-top:none;
-} 
-.active
-{
-    border-top: none;    
-    border-bottom: 2px #0065FC solid;
-    padding-bottom:10px;
-    padding-top:0;
-}
 
 /*section1*/
 .section1
 {
-    width:90%;
+    width:96%;
     margin:auto;    
 }
 h1
@@ -1023,6 +953,10 @@ h2
 {
     margin-bottom:30px;
 }
+.section2
+{
+    padding:0;
+}
 /*section3*/
 h3
 {
@@ -1058,13 +992,18 @@ h3
 }
 
 /*section4*/
+
 h4
 {
     margin-left:40px;
 }
+.figure a
+{
+    margin:0;    
+}
 .figure img
 {
-    height:130px;
+    height:70%;
     object-fit: cover;
     width: 300px;   
 }
@@ -1072,6 +1011,8 @@ h4
 {
     width:300px;
     margin-bottom:30px;
+    height:220px;
+
 }
 .figure
 {
@@ -1079,33 +1020,41 @@ h4
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    width:100%;
+    justify-content:space-around;
 }
-
+.figure figcaption
+{
+    height:30%;
+    padding:20px;
+}
 .section4
 {
     width:100%;    
-     display:flex;
+    display:flex;
     flex-direction:column;
+    margin-bottom:30px;
+}
+.image3
+{
+    padding-top:0;
 }
 
 /*pied de page*/
 footer
 {
-    flex-direction:column;
-    width:90%;
-    margin:auto;
+    flex-direction:column;  
+    padding:50px;  
+    padding-left:20px;
 }
 footer div
 {
     margin:0 0 10px 0;
 }
-.propos
-{
-    margin-top:80px;
-}
+
 }
 
-@media all and (min-width: 481px) and (max-width: 659px)
+@media all  and (max-device-width: 659px)
 {
  /*section2*/
 h2
@@ -1150,17 +1099,22 @@ h2
 }
 
 
-@media all and (min-width: 481px) and (max-width: 599px)
+@media all and (min-device-width: 481px) and (max-device-width: 599px)
 {
     h4
 {
     margin-left:25px;
 
 }
+.section4 figcaption
+{
+    height:30%;
+    padding:20px;
+}
 
 .figure figure img
 {
-    height:130px;
+    height:70%;
     object-fit: cover;  
     width: 100%;   
 }
@@ -1169,6 +1123,7 @@ h2
     width:90%;
     margin: auto;
     margin-bottom:30px;
+    height:220px;
 }
 .figure
 {
@@ -1188,9 +1143,13 @@ h2
     display:flex;
     flex-direction:column;
 }
+.image3
+{
+    padding-top:0;
+}
 }
 
-@media all and (max-device-width: 480px)
+@media all and (max-device-width: 592px)
 { 
 body
 {
@@ -1200,81 +1159,65 @@ body
 }
 
 /*en-tête*/
-header
+ul.menu
 {
-    display:none;
+    margin: 0;
 }
-.header2
+li.menu
 {
-    display:inline;
-    display:flex;
-    flex-direction:column;          
-    margin:40px 20px 20px 20px;      
-    flex-wrap:wrap;    
+    margin:15px;
 }
-.debut
+li.logo
 {
-    display:flex;
-    justify-content: space-between;
+    line-height: 0;
+    height: 60px;
+    margin-bottom:0;
 }
-
-
-.header2 nav
+li.logo img
 {
-    order:2;  
-    display:flex;
-    justify-content:space-around;  
-    width:100%;
-    margin-top:30px;  
-    border-bottom: 2px #f2f2f2;
+    height:100%;
 }
-.header2 nav a
+header li.inscription
 {
-    margin-left:0;    
-    text-decoration: none;
-    color:black;  
+    order:0;
+    height:70px;
+    line-height:50px;
 }
 
-.inscription
+header li.activite
 {
-    order:1;  
-    margin-top:14px;     
-}
-.inscription a
-{
+    width:50%;
+    order:2;
     margin:0;
-    color:#0065FC;
-    font-weight:bold;    
-    text-decoration: none;  
-}
-.header2 nav a:hover
-{
-    border-bottom: 2px #0065FC solid;
-    padding-bottom:10px;
-    border-top:none;
-} 
-.active
-{
-    border-top: none;    
-    border-bottom: 2px #0065FC solid;
-    padding-bottom:10px;
+    text-align:center;
+    border-bottom:2px solid lightgray;
+    height:70px;
+    margin-bottom:20px;
     padding-top:0;
+}
+header li:not(.logo)
+{ 
+border-top: 2px solid transparent !important;
+padding-bottom:0;
+}
+header li.active
+{
+    border-bottom:2px solid #0065FC;
+    width:50%;
+    order:1;
+    margin:0;
+    text-align:center;
+    height:70px;
+    margin-bottom:20px;  
+    padding-top:0;  
 }
 
 /*section1*/
 .section1
 {
-    width:90%;
+    width:96%;
     margin:auto;
 }
-.formsearch
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100%;
-}
-
 .loupe
 {
     display:inline;
@@ -1284,9 +1227,11 @@ header
     font-size:medium;
     font-weight:bold;
     border:1px #0065FC solid;
-    border-radius:10px;
+    border-radius:15px;
     outline:none;
     cursor: pointer;
+    height:100%;
+    width: 45px;
 }
 .bouton
 { 
@@ -1334,7 +1279,7 @@ h2
 .afficher
 {
     align-self: start;
-    margin-left:30px;
+    margin-left:10px;
     margin-top:0;
 }
 .figheb
@@ -1376,7 +1321,10 @@ h4
     margin-left:25px;
 
 }
-
+.section4 figcaption
+{
+    padding:23px;
+}
 .figure figure img
 {
     height:130px;
@@ -1388,6 +1336,7 @@ h4
     width:90%;
     margin: auto;
     margin-bottom:30px;
+    height:200px;
 }
 .figure
 {
@@ -1407,6 +1356,10 @@ h4
     margin:auto;
     width:100%
 }
+.image3
+{
+    padding-top:0;
+}
 
 
 
@@ -1415,8 +1368,7 @@ h4
 footer
 {
     flex-direction:column;
-    width:90%;
-    margin:auto;
+    width:100%;    
 }
 footer div
 {
@@ -1424,7 +1376,7 @@ footer div
 }
 .propos
 {
-    margin-top:80px;
+    margin-top:0;
 }
 }
 
