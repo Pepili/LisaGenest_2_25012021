@@ -11,7 +11,6 @@
     font-style:normal;
 }
 
-
 body
 {
     background-color: #ffffff;
@@ -25,6 +24,7 @@ body
 {
     box-sizing: border-box;
 }
+
 
 /* En-tête */
 
@@ -78,6 +78,7 @@ a:visited
     color: #000000;
 }
 
+
 /*Section 1*/
 
 .section1
@@ -90,12 +91,10 @@ h1
     font-weight:bold;
     font-size: large;
 }
-
 .legende
 {
     font-size:small;
 }
-
 .search
 {
     border:none;
@@ -122,7 +121,6 @@ h1
 {
     color:black;
 }
-
 .bouton
 {
     background-color: #0065FC;
@@ -143,7 +141,6 @@ h1
     border-radius:15px 0 0 15px;
     margin-right:15px;
 }
-
 .filtres
 {    
     display:flex;   
@@ -221,6 +218,7 @@ h1
     margin-top: 10px;
 }
 
+
 /*Section 2 et 3 */
 
 .s2s3
@@ -230,6 +228,7 @@ h1
     width:96%; 
     justify-content:space-between;  
 }
+
 
 /* Section 2 */
 .section2
@@ -246,7 +245,6 @@ h1
     flex-direction: row;
     flex-wrap: wrap;     
 }
-
 h2
 {
     font-weight:bold;
@@ -255,14 +253,12 @@ h2
     margin-bottom:0;
     margin-top:0;   
 }
-
 .domaine
 {
     font-size: medium !important;
     font-weight: bold !important;
     padding-top:20px;
 }
-
 .section2 figcaption
 {
     font-size:small;
@@ -279,20 +275,16 @@ h2
 {
     color: #0065FC;
 }
-
 .vide i
 {
     color:#d9d9d9 !important;
 }
-
 .section2 figure img
 { 
     height:60%;
     width:100%;
     border-radius: 20px 20px 0 0; 
-    object-fit:cover; 
-    box-sizing: border-box; 
-    
+    object-fit:cover;  
 }
 .section2 figure
 {
@@ -328,7 +320,9 @@ h2
     flex-grow:1;
 }
 
+
 /* Section 3 */
+
 .h3
 {
     display:flex;
@@ -354,7 +348,6 @@ h3
     font-weight: bold !important;
     padding-top:20px;
 }
-
 .section3
 {  
     display: flex;
@@ -366,14 +359,6 @@ h3
     padding:3%;    
     width:30%;
 }   
-.section3 figure
-{
-    margin:0;
-    height:145px;
-    max-height:100%;
-    display:flex;
-    flex-grow:1;
-}
 .section3 figure img
 {
     width:40%;
@@ -384,8 +369,7 @@ h3
 .section3 figcaption
 {
     display: flex;   
-    font-size:small;
-    line-height: auto;
+    font-size:small;    
     position:absolute;
     flex-wrap: wrap;
     left:40%;
@@ -406,15 +390,15 @@ h3
 {
     position:relative;    
     display:block;
-    border-radius: 20px;
-    width:350px;
+    margin:0;
     height:145px;
+    max-height:100%;    
+    flex-grow:1;
+    border-radius: 20px;
+    width:350px;    
     border:4px #F2F2F2 solid;
-    -webkit-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
-    -moz-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
     box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
 }
-
 .section3 .stars i
 {
     color: #0065FC;        
@@ -423,7 +407,6 @@ h3
 {
     align-self:flex-end;
 }
-
 .section3 a:hover
 {
     color:#0065FC;    
@@ -440,6 +423,7 @@ h3
     margin-bottom:10%;
 }
 
+
 /* Section 4 */
 
 .section4
@@ -450,11 +434,10 @@ h3
 }
 h4
 {
-    margin:45px 0 20px 10px;
+    margin:40px 0 20px 10px;
     font-size:large;
     font-weight: bold;
 }
-
 .figure
 {
     display:grid;
@@ -480,7 +463,6 @@ h4
     margin-top:32px;
     padding-top:37px;
 }
-
 .image4
 {
     grid-row-start:1;
@@ -502,12 +484,9 @@ h4
     margin:0;
     position:relative;    
     width:100%;             
-    border-radius: 20px;    
-    -webkit-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
-    -moz-box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
+    border-radius: 20px;        
     box-shadow: 0px 4px 6px 3px rgba(209,209,209,1);
 }
-
 .figure img
 {
     border-radius:20px 20px 0 0;    
@@ -519,7 +498,6 @@ h4
     font-size: medium;
     font-weight: bold;     
 }
-
 .figure a:hover
 {
     color:#0065FC;    
@@ -548,7 +526,7 @@ h4
 }
 .image2 figure
 {
-    height:240px;
+    height:220px;
 }
 .image2 img
 {
@@ -635,6 +613,7 @@ h4
     border-radius: 0 0 20px 20px;
 }
 
+
 /*footer*/
 
 footer 
@@ -651,7 +630,6 @@ footer div
     flex-direction: column;
     margin-right: 10%;   
 }
-
 footer a
 {
     color:black;
@@ -675,12 +653,16 @@ footer li
 footer a:hover
 {
     color:#0065FC;
-}   
+}  
+
+
 
 /*Responsive*/
-@media all and (max-device-width:1320px)
+
+@media all and (max-device-width:1324px)
 {
 /*section3*/
+
 .section3 a
 {
     height:220px;
@@ -707,6 +689,7 @@ footer a:hover
 @media all and (max-device-width:1024px)
 {
 /*en-tête*/
+
 .filtres p
 {
     margin:25px 20px 0 0;   
@@ -717,12 +700,9 @@ footer a:hover
     margin-top:20px;
 }
 
+
 /*section1*/
 
-h1
-{
-    margin-top:20px;
-}
 .legende
 {
     margin-bottom:20px;
@@ -736,6 +716,7 @@ h1
 {
     margin-bottom:20px;
 }
+
 
 /*section2*/
 h2
@@ -755,8 +736,7 @@ h2
     border:#ffffff;
     display:flex;
     flex-direction:row;
-    flex-wrap:wrap;       
-    width:300px;   
+    flex-wrap:wrap;           
 }
 .section2
 {
@@ -778,7 +758,10 @@ h2
 {
     margin-bottom:30px;
 }
+
+
 /*section3*/
+
 h3
 {
     
@@ -812,7 +795,10 @@ h3
 {
     object-position:20% 70%;    
 }
+
+
 /*section2et3*/
+
 .s2s3
 {
     flex-direction: column; 
@@ -820,7 +806,9 @@ h3
     margin:0;
 }
 
+
 /*section4*/
+
 h4
 {
     margin-left:40px;
@@ -835,8 +823,7 @@ h4
 .figure img
 {
     height:70%;
-    object-fit: cover;
-    width: 100%;   
+    object-fit: cover;     
 }
 .figure figure
 {
@@ -862,7 +849,6 @@ h4
     height:30%;
     position:relative;
     padding-left:10px !important;    
-    padding:20px;
 }
 .image3, .image6
 {
@@ -876,125 +862,51 @@ h4
     display:flex;
     flex-grow:1;
 }
-
-
 }
+
+
+
 @media all and (max-device-width:768px)
 {
-
 /*section1*/
+
 .section1
 {
     width:96%;
     margin:auto;    
 }
-h1
-{
-    margin-top:20px;
-}
-.legende
-{
-    margin-bottom:20px;
-}
-.section1 ul
-{
-    padding:0;
-    margin-top:0;
-}
-.info
-{
-    margin-bottom:20px;
-}
+
 
 /*section2*/
-h2
-{
-    margin-left:30px;
-    margin-top:40px;
-}
-.figheb
-{
-    width: 100%;
-    margin:auto;    
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:space-around;    
-    
-}
+
 .figheb figure
 {
-    margin-bottom:20px;
-    border:#ffffff;
     width:300px;   
-
-}
-.section2
-{
-    background-color:#ffffff;
-    width:100%;    
-    order:2;
-    display:flex;
-    flex-direction:column;
-}
-.section2 figcaption
-{
-    position:relative;
-}
-.section2 a
-{
-    text-decoration: none;
-}
-.afficher
-{
-    margin-bottom:30px;
 }
 .section2
 {
     padding:0;
 }
+
+
 /*section3*/
+
 h3
 {
-    margin-left:0px;
-    margin-bottom:20px;
-}
-.section3 figure
-{
-    width:90%;
-    margin:auto;  
-    border:0;
-    margin-bottom:20px;  
-}
-.section3
-{
-    width:100%;
-    border-radius:0; 
-    order:1;
-    padding-bottom:20px;  
-    padding:5%; 
-}
-.section3 figcaption
-{
-    display:block;
+    margin-left:0px;    
 }
 
-/*section2et3*/
-.s2s3
-{
-    flex-direction: column; 
-    width:100%;
-    margin:0;
-}
+
 /*section4*/
+
 .section4
 {
     padding:0;
 }
 
 
-
 /*pied de page*/
+
 footer
 {
     flex-direction:column;  
@@ -1005,12 +917,14 @@ footer div
 {
     margin:0 0 10px 0;
 }
-
 }
+
+
 
 @media all  and (max-device-width: 659px)
 {
  /*section2*/
+
 h2
 {
     margin-top:40px;
@@ -1022,14 +936,10 @@ h2
 {
     width:90%;
     margin:auto;
-    margin-bottom:30px;
-    border:#ffffff;
+    margin-bottom:30px;    
 }
 .section2
 {
-    background-color:#ffffff;
-    width:100%;
-    order:2;
     padding:5%;
     padding-bottom: 0;
 }
@@ -1052,25 +962,21 @@ h2
     object-position: 20% 60%;
 }
 
+
 /*section4*/
 
 h4
 {
-    margin-top:40px;
-    align-self: start;
-    margin-bottom:30px;
+    align-self: start;    
     margin-left:0;
 }
 .figure figure
 {
-    width:100%;
-    margin:auto;
-    margin-bottom:30px;  
+    margin:auto;    
     height: 200px;  
 }
 .section4
 {
-    width:100%;  
     padding:5%;  
 }
 .section4 a
@@ -1086,61 +992,11 @@ h4
 {
     object-position: 20% 60%;
 }
-
 }
 
 
-@media all and (min-device-width: 481px) and (max-device-width: 599px)
-{
-    h4
-{
-    margin-left:25px;
 
-}
-.section4 figcaption
-{
-    height:30%;
-    padding:20px;
-}
-
-.figure figure img
-{
-    height:70%;
-    object-fit: cover;  
-    width: 100%;   
-}
-.figure figure
-{
-    width:90%;
-    margin: auto;
-    margin-bottom:30px;
-    height:220px;
-}
-.figure
-{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;     
-}
-.image3, .image6
-{
-    margin:auto;
-    width:100%;
-}
-
-.section4
-{
-    width:100%;    
-    display:flex;
-    flex-direction:column;
-}
-.image3
-{
-    padding-top:0;
-}
-}
-
-@media all and (max-device-width: 592px)
+@media all and (max-device-width: 599px)
 { 
 body
 {
@@ -1150,6 +1006,7 @@ body
 }
 
 /*en-tête*/
+
 ul.menu
 {
     margin: 0;
@@ -1175,7 +1032,6 @@ header li.inscription
     height:70px;
     line-height:50px;
 }
-
 header li.activite
 {
     width:50%;
@@ -1204,7 +1060,9 @@ header li.active
     padding-top:0;  
 }
 
+
 /*section1*/
+
 .section1
 {
     width:96%;
@@ -1231,8 +1089,7 @@ header li.active
 }
 .filtres ul
 {
-    padding-inline-start:0;
-    margin-top:0;
+    padding-inline-start:0;    
 }
 .filtres p
 {
@@ -1241,94 +1098,23 @@ header li.active
 
 
 /*section2*/
+
 h2
 {
-    margin-left:0;
-    margin-top:40px;
-    align-self: start;
     margin-bottom:20px;
-}
-.section2 figure
-{
-    width:90%;
-    margin:auto;    
-    margin-bottom:30px;
-    border:#ffffff;
-}
-.section2
-{
-    background-color:#ffffff;
-    width:100%;
-    align-items: center;
-    justify-content: center;
-    order:2;
-    padding:5%;    
-}
-.section2 a
-{
-    width:100%;
 }
 .afficher
 {
-    align-self: start;
-    margin-left:10px;
-    margin-top:0;
-}
-.figheb
-{
-    display:block;
-}
-/*section3*/
-h3
-{
-    margin-left:0;
-}
-.section3 figure
-{
-    width:90%;
-    margin:auto;  
-    border:0;
-    margin-bottom:20px;  
-}
-.section3
-{
-    width:100%;
-    border-radius:0;       
-    order:1;
-    padding-bottom:20px;
+   margin-left:10px;    
 }
 
-/*section2et3*/
-.s2s3
-{
-    flex-direction: column; 
-    width:100%;
-    margin:0;
-}
 
 /*section4*/
 
-h4
+.section4
 {
-    margin-left:25px;
-
-}
-.section4 figcaption
-{
-    padding:23px;
-}
-.figure figure img
-{
-    height:130px;
-    object-fit: cover;  
-    width: 100%;   
-}
-.figure figure
-{
+    padding:0;
     width:90%;
-    margin: auto;
-    margin-bottom:30px;
-    height:200px;
 }
 .figure
 {
@@ -1336,8 +1122,6 @@ h4
     flex-direction: column;
     flex-wrap: wrap;
 }
-
-
 .image6, .image3
 {
     margin:auto;
@@ -1346,24 +1130,6 @@ h4
 .image3
 {
     padding-top:0;
-}
-
-
-
-
-/*pied de page*/
-footer
-{
-    flex-direction:column;
-    width:100%;    
-}
-footer div
-{
-    margin:0 0 10px 0;
-}
-.propos
-{
-    margin-top:0;
 }
 }
 
