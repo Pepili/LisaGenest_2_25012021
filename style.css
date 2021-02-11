@@ -243,14 +243,9 @@ h1
 }
 .figheb
 {
-/*
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-*/
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap:10px;
+    grid-gap:20px;
     grid-auto-rows: 230px;
 }
 h2
@@ -258,7 +253,7 @@ h2
     font-weight:bold;
     font-size: large; 
     margin-left:20px;
-    margin-bottom:10px;
+    margin-bottom:20px;
     margin-top:0;   
 }
 .domaine
@@ -338,7 +333,8 @@ h3
 {
     font-weight:bold;
     font-size: large;   
-    margin-top:0;              
+    margin-top:0;
+    margin-bottom:20px;              
 }
 #graph
 {
@@ -373,7 +369,8 @@ h3
     display: flex;   
     font-size:small;    
     position:absolute;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
     left:40%;
     bottom:0; 
     line-height: 20px; 
@@ -405,10 +402,6 @@ h3
 {
     color: #0065FC;        
 }
-.section3 .stars
-{
-    align-self:flex-end;
-}
 .section3 a:hover
 {
     color:#0065FC;    
@@ -416,7 +409,7 @@ h3
 .section3 a
 {
     color:black;
-    width:500px;
+    width:300px;
     display:flex;
     max-width:100%;
     flex-grow:1;
@@ -755,6 +748,7 @@ footer a:hover
     .section2 a
     {
         text-decoration: none;
+        margin:10px;
     }
     .afficher
     {
@@ -804,8 +798,7 @@ footer a:hover
     .s2s3
     {
         flex-direction: column; 
-        width:100%;
-        margin:0;
+        padding:0;
     }
 
 
@@ -876,19 +869,7 @@ footer a:hover
     {
         width:96%;
         margin:auto;    
-    }
-
-
-    /*section2*/
-
-    .figheb figure
-    {
-        width:300px;   
-    }
-    .section2
-    {
-        padding:0;
-    }
+    }   
 
 
     /*section3*/
@@ -929,40 +910,37 @@ footer a:hover
 
     h2
     {
-        margin-top:40px;
-        align-self: start;
-        margin-bottom:30px;
-        margin-left:0;
-    }
-    .section2 figure
-    {
-        width:90%;
-        margin:auto;
-        margin-bottom:30px;    
-    }
+        margin-bottom:10px;
+        margin-left:10px;
+    }    
     .section2
     {
-        padding:5%;
-        padding-bottom: 0;
+        padding-bottom: 0 !important;
     }
-    .section2 a
+    .figheb
     {
-        width:100%;
+        display: flex;
+        flex-direction: column;
     }
     .afficher
     {
         align-self: start;   
         margin-top:0;
         margin-left:0;
-    }
-    .figheb
-    {
-        display:block;
-    }
+    }    
     .section2 figure img
     {
         object-position: 20% 60%;
     }
+    .section2 figure
+    {
+        height:230px;
+    }
+    .section2 a
+    {
+        margin:0;
+    }
+
 
 
     /*section4*/
@@ -1097,13 +1075,13 @@ footer a:hover
 
     /*section2*/
 
-    h2
-    {
-        margin-bottom:20px;
-    }
     .afficher
     {
     margin-left:10px;    
+    }
+    .section2
+    {
+        padding:20px;
     }
 
 
