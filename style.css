@@ -2,11 +2,11 @@
 @font-face
 {
     font-family: 'Raleway';
-    src: url('Raleway/Raleway-Regular.ttf');
-    src: url('Raleway/Raleway-Regular.svg'),
-         url('Raleway/Raleway-Regular.eot'),
-         url('Raleway/Raleway-Regular.woff'),
-         url('Raleway/Raleway-Regular.woff2');
+    src: url('raleway/Raleway-Regular.ttf');
+    src: url('raleway/Raleway-Regular.svg'),
+         url('raleway/Raleway-Regular.eot'),
+         url('raleway/Raleway-Regular.woff'),
+         url('raleway/Raleway-Regular.woff2');
     font-weight: normal;
     font-style:normal;
 }
