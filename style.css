@@ -45,6 +45,15 @@ li.logo
     flex: 1 0 140px;
     line-height:150px;
 }
+li.activite a
+{
+    color:black;
+}
+a:visited 
+{
+    text-decoration: none;
+    color: #000000;
+}
 li.logo img
 {
     height:55px;
@@ -352,8 +361,7 @@ h3
 {  
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    display:block;  
+    flex-wrap: wrap;    
     background-color: #F2F2F2;
     border-radius:20px; 
     padding:30px;    
@@ -438,7 +446,7 @@ h4
 {
     display:grid;
     grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(2, 211.5px);
+    grid-auto-rows: 220px;
     grid-column-gap:2%; 
     align-items:stretch;  
 }
@@ -456,7 +464,7 @@ h4
 {
     grid-row:2;
     grid-column: 2;
-    margin-top:32px;
+    margin-top:23px;
     padding-top:37px;
 }
 .image4
@@ -473,7 +481,7 @@ h4
 {
     grid-row: 2;
     grid-column: 4;   
-    margin-top:24px;
+    margin-top:14px;
 }
 .figure figure
 {
@@ -868,8 +876,7 @@ footer a:hover
 
     .section1
     {
-        width:96%;
-        margin:auto;    
+       margin:auto;    
     }   
 
 
@@ -1012,6 +1019,7 @@ footer a:hover
         order:0;
         height:70px;
         line-height:50px;
+        margin-right: 20px;
     }
     header li.activite
     {
@@ -1023,11 +1031,7 @@ footer a:hover
         height:70px;
         margin-bottom:20px;
         padding-top:0;
-    }
-    li.activite a
-    {
-        color:black;
-    }
+    }    
     header li:not(.logo)
     { 
         border-top: 2px solid transparent !important;
@@ -1044,21 +1048,11 @@ footer a:hover
         height:70px;
         margin-bottom:20px;  
         padding-top:0;  
-    }
-    a:visited 
-    {
-        text-decoration: none;
-        color: #000000;
-    }
+    } 
 
 
     /*section1*/
 
-    .section1
-    {
-        width:96%;
-        margin:auto;
-    }
     .loupe
     {
         display:inline;
@@ -1122,6 +1116,28 @@ footer a:hover
 }
 
 
+@media all and (max-width: 320px)
+{
+
+    /*en-tête*/
+
+    li.logo
+    {
+        height:80px;
+    }
+    header li.inscription
+    {
+        padding-left:0;
+        padding-right:0;
+    }
+
+    /*section1*/
+
+    .search
+    {
+        width:150px;
+    }
+}
 
 
 
