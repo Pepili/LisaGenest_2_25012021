@@ -45,31 +45,20 @@ li.logo
     flex: 1 0 140px;
     line-height:150px;
 }
-li.activite a
-{
-    color:black;
-}
-a:visited 
-{
-    text-decoration: none;
-    color: #000000;
-}
 li.logo img
 {
     height:55px;
 }
-header li:not(.logo)
+header li a:not(.logo)
 {
-    display:block;
-    margin:0 10px;
+    display:block;    
     line-height: 80px;
     border-top:2px solid transparent;
-    padding:20px;
+    padding:30px;
 }
-li.active
+.activite a
 {
-    border-top: 2px solid #0065FC !important;
-    
+    color: black;
 }
 nav a
 {
@@ -85,6 +74,23 @@ a:visited
 {
     text-decoration: none;
     color: #000000;
+}
+li.active a
+{
+    color:#0065FC !important; 
+    border-top: 2px solid #0065FC !important;   
+}
+
+
+li.active a:hover, li.activite a:hover
+{
+    color:#0065FC !important; 
+    border-top: 2px solid #0065FC !important;   
+}
+li.active a:active, li.activite a:active
+{
+    color:#0065FC !important; 
+    border-top: 2px solid #0065FC !important;   
 }
 
 
@@ -1008,7 +1014,7 @@ footer a:hover
         line-height: 0;
         height: 100px;
         margin-bottom:0;
-        padding:20px;
+        padding:18px;
     }
     li.logo img
     {
@@ -1021,35 +1027,55 @@ footer a:hover
         line-height:50px;
         margin-right: 20px;
     }
+    li.inscription a
+    {
+        padding-top:10px!important;
+    }
     header li.activite
     {
         width:50%;
         order:2;
         margin:0;
-        text-align:center;
-        border-bottom:2px solid lightgray;
-        height:70px;
+        text-align:center;   
         margin-bottom:20px;
         padding-top:0;
     }    
-    header li:not(.logo)
+    li.activite a
+    {
+        border-bottom:2px solid lightgray;
+        width: 100%;
+        padding-top:0 !important;
+        height:70px;
+    }
+    header li a:not(.logo)
     { 
         border-top: 2px solid transparent !important;
         padding-bottom:0;
+        margin:0;        
     }
     header li.active
     {
-        border-bottom:2px solid #0065FC;
-        color:#0065FC;
         width:50%;
         order:1;
         margin:0;
-        text-align:center;
-        height:70px;
+        text-align:center;        
         margin-bottom:20px;  
-        padding-top:0;  
+        padding-top:0;          
     } 
-
+    li.active a:hover, li.activite a:hover
+    {
+        border-top: 2px solid transparent !important;
+        border-bottom: 2px solid #0065FC;
+    }
+    li.active a
+    {
+        border-bottom:2px solid #0065FC;
+        color:#0065FC;
+        width:100%;
+        padding-top:0!important;
+        height:70px;
+    }
+    
 
     /*section1*/
 
